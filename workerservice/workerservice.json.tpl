@@ -29,10 +29,6 @@
        {
          "name": "DATACENTER",
          "value": "${datacenter}"
-       },
-       {
-         "name": "REGION",
-         "value": "${region}"
        }
      ],
     "family": "${service_name}"

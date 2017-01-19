@@ -14,10 +14,6 @@ variable "environment" {
   default = "Development"
 }
 
-variable "vpc_id" {
-  description = "The VPC"
-}
-
 variable "log_group_name" {
 }
 
