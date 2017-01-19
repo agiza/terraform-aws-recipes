@@ -25,3 +25,7 @@ variable "healthcheck_page_name" {
   description = "specify the health check page. value is optional"
   default = "HealthCheck"
 }
+
+variable "eagle_eye_dashboard" {
+  default = "arn:aws:sns:ap-southeast-2:047651431481:EagleEye-Development-Alerts"
+}
