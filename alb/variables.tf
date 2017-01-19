@@ -21,11 +21,11 @@ variable "alb_ssl_certificate_id" {}
 
 variable "stream_tag" {}
 
-variable "healthcheck_page_name" {
-  description = "specify the health check page. value is optional"
-  default = "HealthCheck"
-}
-
-variable "eagle_eye_dashboard" {
+variable "eagle_eye_sns_topic_arn" {
   default = "arn:aws:sns:ap-southeast-2:047651431481:EagleEye-Development-Alerts"
 }
+variable "team_sns_topic_arn" {}
+
+variable "environment" {}
+variable "datacenter" {}
+

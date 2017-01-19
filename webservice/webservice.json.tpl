@@ -2,8 +2,8 @@
   {
     "name": "${service_name}",
     "image": "${ecr_image}",
-    "cpu": 500,
-    "memory": 450,
+    "cpu": 300,
+    "memory": 300,
     "essential": true,
     "logConfiguration": {
        "logDriver": "awslogs",
