@@ -31,21 +31,6 @@ resource "aws_ecs_task_definition" "default" {
 
 # ALB Configuration
 
-resource "aws_alb_listener_rule" "default" {
-  listener_arn = "${var.alb_listener_id}"
-  priority = 100
-
-  action {
-    type = "forward"
-    target_group_arn = "${var.alb_target_group_arn}"
-  }
-
-  condition {
-    field = "path-pattern"
-    values = ["${var.alb_listener_path_pattern}"]
-  }
-}
-
 resource "aws_ecs_service" "default" {
   name = "${var.ecs_service_name}"
   cluster = "${var.ecs_cluster_name}"

@@ -19,7 +19,7 @@
          "value": "${region}"
        },
        {
-         "name": "ENVIRONMENT",
+         "name": "ENV",
          "value": "${environment}"
        },
        {
@@ -27,14 +27,15 @@
          "value": "${kms_region}"
        },
        {
-         "name": "DATACENTER",
+         "name": "DC",
          "value": "${datacenter}"
        }
      ],
     "family": "${service_name}",
     "portMappings": [
      {
-        "containerPort": ${container_port}
+        "containerPort": ${container_port},
+        "hostPort": 0
       }
     ]
   }

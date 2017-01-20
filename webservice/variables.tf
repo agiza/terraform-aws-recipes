@@ -41,11 +41,11 @@ variable "ecs_role_name" {
 }
 
 variable "ecs_service_web_container_port" {
-	default = "9050"	
+	default = "4000"	
 }
 
 variable "ecs_service_web_host_port" {
-	default = "9050"	
+	default = "0"	
 }
 
 variable "alb_listener_id" {
